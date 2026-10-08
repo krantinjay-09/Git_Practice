@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; }
+        input, textarea { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; }
+        button { padding: 8px 16px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+    <h2>To-Do List</h2>
+
+    <form action="/submittodoitem" method="POST">
+        <label>Item Name</label>
+        <input type="text" name="itemName" required>
+
+        <label>Item Description</label>
+        <textarea name="itemDescription" rows="3"></textarea>
+
+        <button type="submit">Add Item</button>
+    </form>
+
+   
+</body>
+</html>
